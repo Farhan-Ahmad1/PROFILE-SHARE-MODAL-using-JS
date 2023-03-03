@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- WRAPPER  -->
+    <div class="wrapper">
+
+        <!-- CIRCLES -->
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        <!-- MAIN CARD  -->
+        <div class="card">
+            <div class="image"><img src="/images/userimage.jpg" alt="img"></div>
+            <h2>Farhan Ahmad</h2>
+            <h4>Front-End Developer</h4>
+            <div class="card-btn">
+                <button class="b-btn share" onclick="openModal()">
+                    <div class="share-mp">
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share My Profile</span>
+                    </div>
+                </button>
+                <button class="b-btn follow">
+                    <div>Follow Me</div>
+                </button>
+            </div>
+        </div>
+
+        <!-- MODAL  -->
+        <div class="modal">
+            <div class="modal-header">
+                <h1> Share My profile</h1>
+
+                <i class="fa-solid fa-xmark close" onclick="closeModal()"></i>
+            </div>
+            <hr>
+            <h4>Share This Via</h4>
+            <div class="modal-icons">
+
+                <a href="#" class="icon" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="icon" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+
+            </div>
+
+
+        </div>
+
+        <!-- SHADED PORTION  -->
+        <div class="shaded" onclick="closeModal()"></div>
+    </div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
